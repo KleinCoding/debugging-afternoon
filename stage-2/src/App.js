@@ -31,8 +31,9 @@ class App extends Component {
       cart: [...this.state.cart, item]
     })
    console.log(this.state.cart)}
+
   removeFromCart(index) {
-    let cartCopy = this.state.products.slice();
+    let cartCopy = this.state.cart.slice();
     cartCopy.splice(index, 1);
     this.setState({
       cart: cartCopy
